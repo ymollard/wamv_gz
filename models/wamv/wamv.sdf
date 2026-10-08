@@ -11,30 +11,21 @@
         </inertia>
       </inertial>
       <collision name='wamv/base_link_fixed_joint_lump__left_float_collision'>
-        <pose>-0.40000000000000002 1.03 0.20000000000000001 0 1.5707963267948966 0</pose>
+        <pose>-0.40000000000000002 1.03 0.20000000000000001 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>4</length>
-            <radius>0.20000000000000001</radius>
-          </cylinder>
+          <box><size>4 0.354 0.354</size></box>
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__left_mid_float_collision_1'>
-        <pose>1.8500000000000001 1.03 0.29999999999999999 0 1.3799999999999997 0</pose>
+        <pose>1.8500000000000001 1.03 0.29999999999999999 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.5</length>
-            <radius>0.17000000000000001</radius>
-          </cylinder>
+          <box><size>0.5 0.3 0.3</size></box>
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__left_front_float_collision_2'>
-        <pose>2.2999999999999998 1.03 0.40000000000000002 0 1.3 0</pose>
+        <pose>2.2999999999999998 1.03 0.40000000000000002 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.45000000000000001</length>
-            <radius>0.12</radius>
-          </cylinder>
+          <box><size>0.45 0.21 0.21</size></box>
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__front_left_beam_lower_collision_3'>
@@ -118,30 +109,21 @@
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__right_float_collision_12'>
-        <pose>-0.40000000000000002 -1.03 0.20000000000000001 0 1.5707963267948966 0</pose>
+        <pose>-0.40000000000000002 -1.03 0.20000000000000001 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>4</length>
-            <radius>0.20000000000000001</radius>
-          </cylinder>
+          <box><size>4 0.354 0.354</size></box>
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__right_mid_float_collision_13'>
-        <pose>1.8500000000000001 -1.03 0.29999999999999999 0 1.3799999999999997 0</pose>
+        <pose>1.8500000000000001 -1.03 0.29999999999999999 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.5</length>
-            <radius>0.17000000000000001</radius>
-          </cylinder>
+          <box><size>0.5 0.3 0.3</size></box>
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__right_front_float_collision_14'>
-        <pose>2.2999999999999998 -1.03 0.40000000000000002 0 1.3 0</pose>
+        <pose>2.2999999999999998 -1.03 0.40000000000000002 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <length>0.45000000000000001</length>
-            <radius>0.12</radius>
-          </cylinder>
+          <box><size>0.45 0.21 0.21</size></box>
         </geometry>
       </collision>
       <collision name='wamv/base_link_fixed_joint_lump__front_right_beam_lower_collision_15'>
@@ -808,15 +790,6 @@
           <izz>0.0144</izz>
         </inertia>
       </inertial>
-      <collision name='wamv/left_propeller_link_fixed_joint_lump__left_propeller_collision_collision'>
-        <pose>-0.080000000000000002 0 0 0 1.5707963267948966 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.17999999999999999</length>
-            <radius>0.23999999999999999</radius>
-          </cylinder>
-        </geometry>
-      </collision>
       <visual name='wamv/left_propeller_link_visual'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
@@ -957,15 +930,6 @@
           <izz>0.0144</izz>
         </inertia>
       </inertial>
-      <collision name='wamv/right_propeller_link_fixed_joint_lump__right_propeller_collision_collision'>
-        <pose>-0.080000000000000002 0 0 0 1.5707963267948966 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.17999999999999999</length>
-            <radius>0.23999999999999999</radius>
-          </cylinder>
-        </geometry>
-      </collision>
       <visual name='wamv/right_propeller_link_visual'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
