@@ -965,6 +965,23 @@
       <max_thrust_cmd>2353.53383667818</max_thrust_cmd>
     </plugin>
 
+    <!-- Water drag on the hull (coefficients from VRX WAM-V) -->
+    <plugin name='gz::sim::systems::Hydrodynamics' filename='gz-sim-hydrodynamics-system'>
+      <link_name>wamv/base_link</link_name>
+      <xDotU>0.0</xDotU>
+      <yDotV>0.0</yDotV>
+      <nDotR>0.0</nDotR>
+      <xU>-51.3</xU>
+      <xUabsU>-72.4</xUabsU>
+      <yV>-40.0</yV>
+      <yVabsV>0.0</yVabsV>
+      <zW>-500.0</zW>
+      <kP>-50.0</kP>
+      <mQ>-50.0</mQ>
+      <nR>-400.0</nR>
+      <nRabsR>0.0</nRabsR>
+    </plugin>
+
     <plugin name='gz::sim::systems::DetachableJoint' filename='gz-sim-detachable-joint-system'>
       <parent_link>wamv/base_link</parent_link>
       <child_model>platform</child_model>
