@@ -20,4 +20,9 @@ install(DIRECTORY
   worlds
   DESTINATION share/${PROJECT_NAME})
 
+# Noeud Python exécutable avec : ros2 run wamv_gz vessel_follower.py
+install(PROGRAMS
+  scripts/vessel_follower.py
+  DESTINATION lib/${PROJECT_NAME})
+
 ament_package()
