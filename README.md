@@ -31,3 +31,24 @@ ros2 topic pub /wamv/thrusters/right/thrust std_msgs/msg/Float64 "data: -4.0"
 /wamv/sensors/gps/gps/fix
 /wamv/sensors/imu/imu/data
 ```
+
+## Vessel tracking
+The `vessel_follower.py` node detects the target vessel (Vessel E, downloaded from Gazebo Fuel) in the front camera with YOLO, tracks it with OpenCV between detections, and steers the WAM-V towards it with a PD controller.
+
+1. Install YOLO (`yolov8n.pt` is downloaded on first run):
+```bash
+pip install ultralytics
+```
+2. Rebuild, then start the simulation and the follower in two terminals:
+```bash
+ros2 launch wamv_gz wamv_launch.py
+ros2 run wamv_gz vessel_follower.py
+```
+3. Display the annotated camera image:
+```bash
+ros2 run rqt_image_view rqt_image_view /vessel_follower/image
+```
+4. Gains can be tuned live (`kp`, `kd`, `forward`, `yolo_every`):
+```bash
+ros2 param set /vessel_follower kp 600.0
+```
